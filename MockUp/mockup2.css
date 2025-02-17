@@ -1,0 +1,247 @@
+body{
+    background-color:#5C547E;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: #0D0A20;
+    padding: 25px;
+    margin: 25px auto; /* Centering the container horizontally */
+    margin-right: 25px;
+    margin-left: 25px;
+    border: 0px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a shadow to the container */
+    position: relative;
+    background-image: url('../images/stars.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center -5%;
+}
+
+#container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-image: url('../images/undefined.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+hr[id="custom"] {
+    width: 60%;
+    border: none;
+    height: 1.5px;
+    background: linear-gradient(to right, rgba(96, 38, 255, 0.3), rgba(128, 73, 255, 0.9), rgba(96, 38, 255,0.3));
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Times, "Times New Roman", Georgia, serif;
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+h2{
+    font-family: Times, "Times New Roman", Georgia, serif;
+    color: white;
+    font-size: 32px;
+}
+
+h3{
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.row {
+    margin: 10px 10% 10px 10%; /* top right bottom left */
+}
+
+.icon-row, .icon-row2 {
+    justify-content: center; /* Center icons horizontally */
+    display: flex; 
+    flex-direction: row;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.icon {
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#web-design-container{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #231d47;
+    padding: 20px;
+    height: 100%;
+}
+#branding-container{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #231d47;
+    padding: 20px;
+    height: 100%;
+}
+
+.circular-button {
+    border-radius: 50%;
+    border: 0px solid transparent;
+    background:  linear-gradient(to right, #0D0A20, #6832a5);
+    cursor: pointer;
+}
+.circular-button svg{
+    margin-bottom:2px;
+}
+
+.action-button {
+    border: 0px solid transparent;
+    border-radius: 50px;
+    background:  linear-gradient(to right, #0D0A20, #6832a5);
+    cursor: pointer;
+}
+
+#right-arrow{
+    background: linear-gradient(to right, #6832a5, #0D0A20);
+}
+
+.circular-button svg {
+    fill: white;
+}
+
+.custom-row {
+    margin-left: -5px; /* Use negative margin to compensate for default margin */
+    margin-right: -5px; /* Use negative margin to compensate for default margin */
+}
+.custom-row > div[class^="col-"] {
+    padding-left: 5px; /* Compensate for negative margin with padding */
+    padding-right: 5px; /* Compensate for negative margin with padding */
+}
+
+.user-container {
+    margin: 25px 0;
+}
+
+img[id="user_logo"]{
+    float: left;
+    max-width: 134px;
+    width: 100%;
+    border-radius: 50%;
+    margin-left: -20px;
+}
+
+img[id="girlwithlaptop"]{
+    float: left;
+    max-width: 126px;
+    height:100%;
+    max-height: 147px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#address {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    outline: none;
+}
+
+.astext {
+    background:none;
+    border:none;
+    padding:0;
+    cursor: pointer;
+}
+
+
+#ofspace {
+    width: 102%;
+    margin-bottom: -25px;
+    margin-left: -1%;
+}
+
+#logo-container{
+    perspective: 1000px; /* Define perspective for 3D effect */
+    margin: 0 auto;
+}
+
+#mainlogo{
+    transition: transform 0.5s; /* Add smooth transition for transform */
+}
+
+/* Media query for smartphone version */
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+
+    #ofspace {
+        width: 108%;
+        margin-left: -4.2%;
+    }
+    
+    a svg{
+        width: 12px;
+        height: 12px;
+    }
+
+    #container::before {
+        background-size: 100%;
+    }
+
+    .icon {
+        width: 50px;
+    }
+    .icon-row{
+        gap: 2rem;
+    }
+    .icon-row2{
+        gap: 1rem;
+    }
+}
+
+
+.carousel {
+    overflow-x: hidden;
+}
+
+.containerserv {
+    display: none;
+}
+
+.containerserv.active {
+    display: block;
+}
+
+.circular-button, .action-button {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Adjust shadow properties as needed */
+}
+
+.circular-button:active , .action-button:active {
+    border: none; /* Remove border when button is clicked */
+    outline: none; /* Remove outline when button is clicked */
+}
+
+.circular-button:focus , .action-button:focus {
+    border: none; /* Remove border when button is clicked */
+    outline: none; /* Remove outline when button is clicked */
+}
+
+.circular-button:hover , .action-button:hover {
+    transform: translatey(-5px);
+    margin: 2px;
+}
+
