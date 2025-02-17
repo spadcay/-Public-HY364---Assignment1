@@ -7,5 +7,5 @@ Public HY364 - Assignment 1
 
 Possible Issues:
 - Hovering over some buttons affects adjacent elements.
-- Padding/margin should be used instead of <br>.
-- The "Trusted by brands all over the world" section had to be coded from scratch without using an <img>.
+- Padding/margin should be used instead of "<br>".
+- The "Trusted by brands all over the world" section had to be coded from scratch without using an "<img>".
